@@ -1,0 +1,15 @@
+{
+  "name": "task4",
+  "version": "1.0.0",
+  "description": "fetching names",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kelvin Wong",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.1.4"
+  }
+}
