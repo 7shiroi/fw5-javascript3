@@ -18,12 +18,12 @@ const getMonth = (callback) => {
     if (!error) {
       callback(null, month);
     } else {
-      callback(new Error("Sorry Data Not Found", []));
+      callback(new Error("Sorry Data Not Found"), []);
     }
   }, 4000);
 };
 
-function mapMonths(error, month) {
+getMonth((error, month) => {
   if (error == null) {
     let mapped = [];
     if (month.length > 0) {
@@ -33,6 +33,4 @@ function mapMonths(error, month) {
   } else {
     console.log(error);
   }
-}
-
-getMonth(mapMonths);
+});
